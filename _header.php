@@ -11,3 +11,20 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="container">
+            <div class="site-logo float-left">
+                <a href="#"><img src="images/logo.png" alt="B.A.D.S"></a>
+            </div>
+            <div class="top-nav-wrap float-right">
+                <ul class="top-nav">
+                    <li><a href="#">Pristatymas</a></li>
+                    <li><a href="#">Apmokėjimas</a></li>
+                    <li><a href="#">Garantijos ir grąžinimas</a></li>
+                    <li><a href="#">Apie B.A.D.S</a></li>
+                    <li><a href="#">Kontaktai</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>     

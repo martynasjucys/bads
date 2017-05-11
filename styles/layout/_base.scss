@@ -1,9 +1,23 @@
 body {
     font-family: $primary-font;
+    background-color: $body-bg-color;
 }
 
 .container {
     width: $container-width;
     margin: 0 auto;
     position: relative;
+    @include clearfix();
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.clearfix {
+    @include clearfix();
 }

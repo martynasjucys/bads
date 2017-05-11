@@ -196,11 +196,53 @@ template {
   display: none; }
 
 body {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e0e0e0; }
 
 .container {
   width: 960px;
   margin: 0 auto;
   position: relative; }
+  .container::after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.float-left {
+  float: left !important; }
+
+.float-right {
+  float: right !important; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.header {
+  background-color: #21313b;
+  padding: 11px 0; }
+  .header .top-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .header .top-nav::after {
+      display: block;
+      content: "";
+      clear: both; }
+    .header .top-nav li, .header .top-nav a {
+      color: #fff;
+      text-shadow: 0px 0px 4px black;
+      font-size: 11px; }
+    .header .top-nav li {
+      float: left;
+      margin-right: 2px; }
+      .header .top-nav li a {
+        text-decoration: none; }
+      .header .top-nav li::after {
+        content: "|";
+        margin-left: 3px; }
+      .header .top-nav li:last-child::after {
+        content: ""; }
 
 /*# sourceMappingURL=style.css.map */
