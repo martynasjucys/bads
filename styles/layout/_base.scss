@@ -1,0 +1,9 @@
+body {
+    font-family: $primary-font;
+}
+
+.container {
+    width: $container-width;
+    margin: 0 auto;
+    position: relative;
+}
