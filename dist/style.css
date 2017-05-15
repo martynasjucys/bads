@@ -199,6 +199,12 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: #e0e0e0; }
 
+a {
+  text-decoration: none;
+  transition: color .3s; }
+  a:hover {
+    text-decoration: none; }
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -222,27 +228,70 @@ body {
 .header {
   background-color: #21313b;
   padding: 11px 0; }
+  .header .site-logo {
+    line-height: 76px;
+    display: block; }
+    .header .site-logo img {
+      vertical-align: middle; }
   .header .top-nav {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 10px; }
     .header .top-nav::after {
       display: block;
       content: "";
       clear: both; }
     .header .top-nav li, .header .top-nav a {
-      color: #fff;
+      color: #dbdbdb;
       text-shadow: 0px 0px 4px black;
-      font-size: 11px; }
+      font-size: 11px;
+      line-height: 14px; }
     .header .top-nav li {
       float: left;
       margin-right: 2px; }
       .header .top-nav li a {
         text-decoration: none; }
+        .header .top-nav li a:hover, .header .top-nav li a.current {
+          color: #979da1; }
       .header .top-nav li::after {
         content: "|";
         margin-left: 3px; }
       .header .top-nav li:last-child::after {
         content: ""; }
+  .header .info-block {
+    background-color: #2a3f47;
+    border: 1px solid #15232b;
+    padding: 0 14px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px; }
+    .header .info-block::after {
+      display: block;
+      content: "";
+      clear: both; }
+    .header .info-block .info-block-content span, .header .info-block .info-block-content a {
+      color: #dbdbdb;
+      text-shadow: 0px 0px 4px black;
+      font-size: 11px;
+      line-height: 11px;
+      vertical-align: middle; }
+    .header .info-block .info-block-content a {
+      font-weight: 700; }
+      .header .info-block .info-block-content a:hover, .header .info-block .info-block-content a.current {
+        color: #979da1; }
+    .header .info-block .block-image {
+      line-height: 50px;
+      margin-right: 8px; }
+      .header .info-block .block-image img {
+        vertical-align: middle; }
+    .header .info-block .spacer {
+      width: 1px;
+      margin: 0 12px;
+      border-right: 1px solid #3d5a66;
+      background: #15232b;
+      height: 36px; }
 
 /*# sourceMappingURL=style.css.map */
