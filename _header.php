@@ -59,5 +59,41 @@
                     </div>
                 </div>
             </div>
+            <div class="clearfix"></div>
+            <div>
+                <ul id="accordion">
+                    <li class="slide1">
+                        <div class="slide_handle"><div>Automobilių dalys</div></div>
+                        <div class="slide_content">
+                            <a class="image" ><img alt="Tiger"  src="images/slides/slide.jpg" /></a>
+                            
+                        </div>
+                    </li>
+                    <li class="slide2">
+                        <div class="slide_handle"><div>Automobilių įranga</div></div>
+                        <div class="slide_content">
+                            <a class="image" ><img alt="Tiger"  src="images/slides/slide.jpg" /></a>
+                            
+                        </div>
+                    </li>
+                    <li class="slide3">
+                        <div class="slide_handle"><div>Lorem ipsum dolor</div></div>
+                        <div class="slide_content">
+                            <a class="image" ><img alt="Tiger"  src="images/slides/slide.jpg" /></a>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>     
+    <div class="site-nav-wrap">
+        <div class="container">
+            <ul class="site-nav">
+                <li class="current"><a href="#" class="home"><img src="images/home.png" alt="Home" /></a></li>
+                <li><a href="#">Naujausios prekės</a></li>
+                <li><a href="#">Akcijos</a></li>
+                <li><a href="#">Kainynai</a></li>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,56 @@
+#accordion {
+    color: #fff;
+    height: 299px;
+    list-style: none;
+    margin: 10px 0 0 0;
+    overflow: scroll;
+    padding: 0;
+    width: 960px;
+    border: 1px solid #1e292f;
+    font-size: 15px;
+    
+    li {
+        height: 299px;
+        position: relative;
+    }
+
+    .slide_handle {
+        @include gradient($light-blue-end, $light-blue-start, 'vertical');
+        bottom: 0;
+        height: 299px;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        top: 0;
+        border-right: 1px solid #1e292f;
+        width: 39px;
+
+        div {
+            float: left;
+            padding: 10px;
+            width: 279px;
+            height: 20px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transform: rotate(-90.0deg) translate(-100%);
+            transform-origin: left top;
+            @include light-text-shadow();
+        }
+    }
+
+    .slide_opened .slide_handle {
+        cursor: default;
+    }
+
+    .slide_content {
+        bottom: 0;
+        left: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .slide_content a img {
+        border: 0;
+    }
+}
