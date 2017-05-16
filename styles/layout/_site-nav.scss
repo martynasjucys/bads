@@ -1,0 +1,72 @@
+.site-nav-wrap {
+    border-top: 1px solid #c9d9e1;
+    border-bottom: 1px solid #959595;
+    @include gradient($light-blue-start, $light-blue-end, 'h');
+    padding: 5px 0;
+
+    .site-nav {
+        @include reset-ul();
+        @include clearfix();
+        margin: 3px 0;
+
+        li {
+            float: left;
+            margin-right: 10px;
+
+            a {
+                display: block;
+                padding: 5px 10px;
+                line-height: 21px;
+                @include light-text-shadow();
+                text-transform: uppercase;
+                border-radius: 5px;
+
+                img {
+                    vertical-align: middle;
+                    padding: 0;
+                }
+
+                &.home {
+                    padding: 5px;  
+                }
+            }
+
+            &:hover,
+            &.current {
+                a {
+                    background: #6d8b9b;
+                    -webkit-box-shadow: inset 0px 0px 12px -2px rgba(0,0,0,0.41);
+                    -moz-box-shadow: inset 0px 0px 12px -2px rgba(0,0,0,0.41);
+                    box-shadow: inset 0px 0px 12px -2px rgba(0,0,0,0.41);
+                }
+            }
+        } 
+    }
+
+    .search-box {
+        input[type="text"] {
+            height: 36px;
+            min-width: 263px;
+            outline: 0;
+            border: none;
+            padding: 0 10px;
+            -webkit-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.72);
+            -moz-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.72);
+            box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.72);
+        }
+
+        .search-btn {
+            height: 36px;
+            line-height: 36px;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            background: #293e47;
+            padding: 0 8px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}

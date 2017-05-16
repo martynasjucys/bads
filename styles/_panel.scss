@@ -1,0 +1,67 @@
+.panel {
+    margin-bottom: 10px;
+
+    .panel-content {
+        display: none;
+
+        &.list {
+            padding: 0;
+        }
+    }
+
+    &.expanded {
+        .panel-content {
+            display: block;
+        }
+    }
+}
+
+.panel-content {
+    background: #fff;
+    padding: 15px;
+}
+
+.panel-heading {
+    padding: 10px;
+    position: relative;
+    @include gradient($dark-blue-start, $dark-blue-end, 'h');
+
+    h3 {
+        display: block;
+        margin: 0;
+        font-size: $primary-font-size;
+        padding-left: 5px;
+        @include light-text-shadow();
+        text-transform: uppercase;
+    }
+
+    .panel-toggle {
+        position: absolute;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        top: 7px;
+        font-size: 14px;
+        right: 6px;
+        outline: none;
+        cursor: pointer;
+        color: #74a0b7;
+        font-weight: 700;
+        text-align: center;
+
+        &::after {
+            content: "+";
+            line-height: 16px;
+        }
+
+        &.expanded {
+            &::after {
+                content: "-";
+                line-height: 15px;
+            }
+        }
+    }
+}
+

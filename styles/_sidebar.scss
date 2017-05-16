@@ -1,0 +1,44 @@
+.text-line {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #3a3a3a;
+
+    .blue {
+        color: #74a0b7;
+        font-weight: 600;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidebar-list {
+    @include reset-ul();
+
+    li {
+        position: relative;
+        border-bottom: 1px solid #e4e2e2;
+        
+        a {
+            display: block;
+            padding: 12px 15px;
+            color: #3a3a3a;
+        }
+
+        &::after {
+            content: "";
+            font-weight: bold;
+            position: absolute;
+            color: #74a0b7;
+            top: 16px;
+            right: 15px;
+            font-size: 16px;
+            width: 6px;
+            height: 8px;
+            background: url("../images/arrow.png") no-repeat;
+        }
+    }
+}

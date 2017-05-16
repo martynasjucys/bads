@@ -1,0 +1,12 @@
+.layout {
+    padding: 12px 0;
+
+    .sidebar {
+        width: $sidebar-width;
+        padding-right: 20px;
+    }
+
+    .content {
+        width: $container-width - $sidebar-width - 20;
+    }
+}

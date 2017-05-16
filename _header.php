@@ -89,11 +89,18 @@
     </header>     
     <div class="site-nav-wrap">
         <div class="container">
-            <ul class="site-nav">
+            <ul class="site-nav float-left">
                 <li class="current"><a href="#" class="home"><img src="images/home.png" alt="Home" /></a></li>
                 <li><a href="#">Naujausios prekės</a></li>
                 <li><a href="#">Akcijos</a></li>
                 <li><a href="#">Kainynai</a></li>
             </ul>
+            <div class="search-box float-right">
+                <form action="#">
+                    <input type="text" name="search" class="float-left" placeholder="Paieška...">
+                    <button class="float-left search-btn"><img src="images/search.png" alt="Search"/></button>
+                </form>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
